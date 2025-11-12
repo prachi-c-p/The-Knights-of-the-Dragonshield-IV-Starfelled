@@ -51,3 +51,25 @@ a {
   color: rgb(17, 153, 67);
   text-shadow: rgb(184, 217, 198);
 }
+
+.navbar-container{
+  text-align: right;
+  position: sticky;
+  width: 100%;
+  background-color: transparent(0, 0, 0, 0.8);
+  z-index: 2;
+}
+.navback{
+  position: sticky;
+  z-index: 1;
+  width: 500px;
+  padding: 0px;
+  margin: 0px;(
+  background: url(archive/Opening Sword.svg);
+
+
+}
+
+.navbar{
+  padding-left: 15px;
+}
