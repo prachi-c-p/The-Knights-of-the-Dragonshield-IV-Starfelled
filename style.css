@@ -1,15 +1,12 @@
 /*Importing Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Estonia&family=IM+Fell+English+SC&family=Kings&family=Metal+Mania&display=swap');
-* {
-  font-family: IM Fell English SC, serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 body{
-  margin: 0;
-  padding: 0;
+  margin:0px;
+  padding: 0px;
   box-sizing: border-box;
+  background-color: #0c0b0b;
 }
 
 .logo{
@@ -26,16 +23,18 @@ header{
 }
 
 .navbar-container{
+  font-family: "IM Fell English SC", sans-serif;
+  font-size: 13px;
   display: flex;
   justify-content: center; 
   padding-top: 5px;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
   line-height: 50px;
-  background-color: rgba(0, 0, 0, 0.471);
+  background-color: transparent;
   align-items: center;
   padding: 0 20px;
 }
@@ -67,7 +66,7 @@ header nav a{
   top: 40%;                 
   left: 50%;           
   transform: translate(-50%, -50%);
-  color: rgba(37, 194, 100, 0.917);
+  color: rgba(10, 153, 67, 0.917);
   font-size: 4rem;
   text-shadow: 0 0 15px black;
   letter-spacing: 3px;
@@ -78,12 +77,29 @@ header nav a{
 .Starfelled{
   font-family: "Kings", sans-serif;
   color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgb(111, 209, 218);
+}
+
+.preorder-btn{
+  font-family: "Estonia", sans-serif;
+  position: absolute;
+  top: 80%;                 
+  left: 50%;           
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: rgb(10, 153, 67, 0.917);
+  border: 2px solid rgba(10, 153, 67, 0.211);
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 body{
   background-color: #000000;
-  color: rgb(166, 128, 78);
+  color: #a6804e;
 }
 
 a {
@@ -98,6 +114,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  z-index: -10;
 }
 
 .video-container{
@@ -121,7 +139,39 @@ a {
   opacity: 0.5;
 }
 
+.prophecy-container{
+  background-color: #000000f2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  padding: 20px;
+}
+.prophecy1{
+  padding-top: 30%;
+  font-family: "Babylonica", cursive;
+  font-size: 2rem;
+  color: rgba(10, 153, 67, 0.917);
+}
 
+.prophecy2{
+  padding-top: 30%;
+  font-family: "Babylonica", cursive;
+  text-align: right;
+  font-size: 2rem;
+  color: rgba(10, 153, 67, 0.917);
+}
+
+.h2{
+  font-family: "Metal Mania", serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 40px;
+  color: #3f3429;
+}
+
+.characters-preview{
+  background-color: #010101f2;
+}
 .characters-container{
   display: flex;
   flex-wrap: wrap;
@@ -132,7 +182,7 @@ a {
 
 .char{
   width: 250px;
-  background: #1a1a1a;
+  background: #1a1a1aaf;
   border-radius: 15px;
   padding: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
@@ -144,19 +194,46 @@ a {
   transform: translateY(-8px);   /* cute hover lift */
 }
 
-.char-img{
-  width: 100%;
-  height: 300px;
+.char-img1{
+  padding-bottom: 30%;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.char-img2{
+  padding-bottom: 20%;
+  width: 470px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
 
+.char-img3{
+  padding-bottom: 30%;
+  width: 370px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.char-img4{
+  padding-top: 50%;
+  padding-bottom: 35%;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
 .Blog-prewiew{
-  border: 2px solid rgb(166, 128, 78);
+  border: 1px solid rgb(166, 128, 78);
   border-radius: 15px;
   padding: 15px;
   margin: 20px;
-  background-color: #1c1a1a;
+  background-color: transparent;
   color: #fff;
 }
 
@@ -173,7 +250,12 @@ a {
   border-radius: 15px;
   width: 80%;
   margin-bottom: 20px;
-  background-color: rgb(41, 39, 36);
+  background-color: rgba(12, 11, 11, 0.761);
+  color: #b2b1af;
+}
+
+.char-name{
+  color: rgb(225, 220, 220);
 }
 
 .footer{
@@ -183,3 +265,21 @@ a {
   padding: 10px;
   font-size: 11px;
 }
+
+.h21{
+  font-family: "Metal Mania", serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 40px;
+  color: rgba(1, 88, 36, 0.917);
+}
+
+h3{
+  color: rgba(171, 227, 193, 0.917);
+}
+
+
+/* Newsletter Page Styles */
+
+
+/* Lore css */
